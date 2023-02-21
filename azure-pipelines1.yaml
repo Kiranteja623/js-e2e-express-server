@@ -2,6 +2,6 @@ pool: Default
 trigger:
   - main
 stages:
-  - template: azuredevops/parameters.yaml 
+  - template: ./azuredevops/parameters.yaml 
     parameters:
       customCommand: install
