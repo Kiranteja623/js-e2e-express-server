@@ -1,0 +1,31 @@
+parameters:
+  - name: customCommand
+    type: string
+    default: install
+    values: 
+      - build
+      - install
+
+stages:
+  - stage: nodejs
+    displayName: nodejsbuild
+    jobs:
+      - job: node
+        displayName: nodejsbuild1
+        steps: 
+          - task: NodeTool@0
+            inputs:
+              versionSource: 'spec'
+              versionSpec: '6.x'
+          - task: Npm@1
+            inputs: 
+              command: 'custom'
+              customCommand: 'install'
+          - task: Npm@1
+            inputs: 
+              command: 'custom'
+              customCommand: 'build'
+
+
+
+
