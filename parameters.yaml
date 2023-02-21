@@ -21,10 +21,6 @@ stages:
             inputs: 
               command: 'custom'
               customCommand: 'install'
-          - task: Npm@1
-            inputs: 
-              command: 'custom'
-              customCommand: 'build'
 
 
 
