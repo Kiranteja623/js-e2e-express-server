@@ -5,3 +5,4 @@ stages:
   - template: ./parameters.yaml 
     parameters:
       customCommand: install
+      
