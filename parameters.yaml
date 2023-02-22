@@ -1,5 +1,5 @@
 parameters:
-  - name: custom
+  - name: customCommand
     type: string
     default: any
     values: 
