@@ -3,8 +3,8 @@ parameters:
     type: string
     default: install
     values: 
-      - build
       - install
+      - run build
 
 stages:
   - stage: nodejs
@@ -16,7 +16,7 @@ stages:
           - task: Npm@1
             inputs: 
               command: 'custom'
-              customCommand: 'run build'
+              customCommand: 'install'
            
 
 
