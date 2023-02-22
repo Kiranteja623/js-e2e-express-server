@@ -1,7 +1,7 @@
 parameters:
   - name: customCommand
     type: string
-    default: install
+    default: any
     values: 
       - install
       - run build
