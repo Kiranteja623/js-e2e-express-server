@@ -4,6 +4,4 @@ trigger:
 extends:
   template: ./parameters.yaml 
   parameters:
-    customCommand:
-      - install
-      - run build
+    customCommand: run build
