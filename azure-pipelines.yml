@@ -8,10 +8,10 @@ steps:
   - script: |
       sudo apt update
   - script: |
-      sudo apt install nodejs
+      sudo apt install nodejs -y
     displayName: 'nodejs install'
   - script: |
-      sudo apt install npm
+      sudo apt install npm -y
     displayName: 'npm install'
   - script: |
       - cd js-e2e-express-server
