@@ -1,8 +1,8 @@
-pool: Azure Pipelines
+pool: Default
 trigger:
   - main
 extends:
   template: ./parameters.yaml 
   parameters:
-    customCommand: run build
+    customCommand: install
       
