@@ -16,7 +16,7 @@ stages:
           - task: Npm@1
             inputs: 
               command: 'custom'
-              customCommand: "${{ parameters.customcommand }}"
+              customCommand: "${{ parameters.customCommand }}"
            
 
 
