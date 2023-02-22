@@ -1,5 +1,5 @@
 parameters:
-  - name: customCommand
+  - name: custom
     type: string
     default: any
     values: 
@@ -15,7 +15,7 @@ stages:
         steps: 
           - task: Npm@1
             inputs: 
-              command: 'customCommand'
+              command: 'custom'
               customCommand: "${{ parameters.customCommand }}"
               
            
