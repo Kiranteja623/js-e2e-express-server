@@ -17,6 +17,7 @@ stages:
             inputs: 
               command: 'custom'
               customCommand: "${{ parameters.customCommand }}"
+              workingDir: js-e2e-express-server/
            
 
 
